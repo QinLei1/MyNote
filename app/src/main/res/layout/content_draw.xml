@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DrawActivity"
+    tools:showIn="@layout/activity_draw">
+
+    <io.github.mkckr0.mynote.View.DrawView
+        android:id="@+id/view_drawing"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_draw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_draw"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton_color"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:tint="@android:color/black"
+            app:srcCompat="@drawable/shape_circle" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_drawing"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton_erase"
+                android:layout_width="48dp"
+                android:layout_height="46dp"
+                android:background="?attr/selectableItemBackground"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="橡皮擦" />
+
+            <RadioButton
+                android:id="@+id/radioButton_pen"
+                android:layout_width="48dp"
+                android:layout_height="46dp"
+                android:background="?attr/selectableItemBackground"
+                android:button="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="笔" />
+        </RadioGroup>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton_width"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/shape_line_1" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
