@@ -94,7 +94,7 @@
 &emsp;&emsp;图表7所示为快速简单记事本主界面。图中黑色边框为界面边界，不属于设计范围。在主界面每一个记事都做成了卡片样式。界面顶部是应用工具栏，不同界面的应用工具栏拥有相似的外观。底部是功能工具栏，不同的界面有不同的按钮组。
 
 #### 2.4.2 记事编辑界面
-![记事](https://raw.githubusercontent.com/MKcKr0/MyNote/master/doc-image/记事.bmp)
+![记事](https://raw.githubusercontent.com/MKcKr0/MyNote/master/doc-image/记事.bmp)  
 &emsp;&emsp;在记事编辑界面中，用户可以点击底部的画图按钮进行绘图。可以点击声音按钮进行录音，点击照片按钮进行照相。底部工具栏还显示了记事的修改时间。添加的图片会直接在此界面中显示出来。
 
 #### 2.4.3 画图界面设计
